@@ -1,0 +1,11 @@
+[package]
+name = "cappy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.5.32", features = ["derive"] }
+ingot = { git = "https://github.com/oxidecomputer/ingot", version = "0.1.0" }
+internet-checksum = "0.2.1"
+zerocopy = { version = "0.8.24", features = ["alloc", "derive", "std"] }
