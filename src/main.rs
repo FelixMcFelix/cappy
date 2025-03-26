@@ -85,6 +85,8 @@ pub struct Vxlan {
     rsvd_1: u27be,
     #[ingot(is = "[u8; 3]")]
     pub vni: Vni,
+    #[ingot(default = 0)]
+    rsvd_2: u8,
 }
 
 const SNOOP_MAGIC: &[u8; 8] = b"snoop\0\0\0";
